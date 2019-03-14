@@ -1,0 +1,9 @@
+#this needs to be filled in with Flickr API details and the query details...
+[flickr]
+api_key = key
+api_secret = secret
+
+[query]
+# Collie's user account
+userID = userIdNotName
+start_date = YYYY-MM-DD
