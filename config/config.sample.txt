@@ -4,6 +4,8 @@ api_key = key
 api_secret = secret
 
 [query]
-# Collie's user account
 userID = userIdNotName
 start_date = YYYY-MM-DD
+
+[behaviour]
+save_photos = false

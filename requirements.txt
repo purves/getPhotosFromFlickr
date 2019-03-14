@@ -1,0 +1,6 @@
+configparser
+urllib
+pprint
+loguru
+flickrapi
+os
