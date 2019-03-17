@@ -1,11 +1,12 @@
 from configparser import ConfigParser
 import urllib
-from pprint import pprint
 from loguru import logger
 import flickrapi
 import os
 
+# log-guru logging, log to file.
 logger.add(".//output//logs//logs_{time}.log", format="{level}: {message}")
+
 # get flickr authentication details from config file
 CONFIG_FILE = './/config//config.ini'
 config = ConfigParser()
@@ -36,10 +37,6 @@ for photo in flickr.walk(user_id=userID,
 
     # keep track of how many have been saved
     count = count + 1
-
-    # write out the photo details
-    # logger.debug(str(count) + " --> " + photo.get('id') +
-    #             ":" + photo.get('title'))
 
     # get the url of the original photo
     url = photo.get('url_o')
